@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 0.6rem;
+  padding: 0.6rem;
+}
+
+.screen {
+  background-color: rgb(80, 68, 68);
+  grid-column: 1 / span 3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.4rem;
+}
+
+.previous {
+  font-size: 0.8rem;
+}
+.current {
+  font-size: 1.2rem;
+}
+
+.number,
+.operator,
+.equal,
+.decimal {
+  font-size: 1.2rem;
+}
